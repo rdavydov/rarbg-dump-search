@@ -1,14 +1,14 @@
-# 🧲 rarbg-dump
+# 🧲 rarbg-dump-search
 
-<https://github.com/rdavydov/rarbg-dump>
+<https://github.com/rdavydov/rarbg-dump-search>
 
-![](https://img.shields.io/github/license/rdavydov/rarbg-dump?style=for-the-badge&logo=github&color=purple&logoColor=thistle)
-![](https://img.shields.io/github/stars/rdavydov/rarbg-dump?style=for-the-badge&logo=github&color=darkblue&logoColor=aquamarine)
-![](https://img.shields.io/github/forks/rdavydov/rarbg-dump?style=for-the-badge&logo=github&color=darkblue&logoColor=aquamarine)
-![](https://img.shields.io/github/watchers/rdavydov/rarbg-dump?style=for-the-badge&logo=github&color=darkblue&logoColor=aquamarine)
-![](https://img.shields.io/github/last-commit/rdavydov/rarbg-dump?style=for-the-badge&logo=github&color=darkgreen&logoColor=lightgreen)
+![](https://img.shields.io/github/license/rdavydov/rarbg-dump-search?style=for-the-badge&logo=github&color=purple&logoColor=thistle)
+![](https://img.shields.io/github/stars/rdavydov/rarbg-dump-search?style=for-the-badge&logo=github&color=darkblue&logoColor=aquamarine)
+![](https://img.shields.io/github/forks/rdavydov/rarbg-dump-search?style=for-the-badge&logo=github&color=darkblue&logoColor=aquamarine)
+![](https://img.shields.io/github/watchers/rdavydov/rarbg-dump-search?style=for-the-badge&logo=github&color=darkblue&logoColor=aquamarine)
+![](https://img.shields.io/github/last-commit/rdavydov/rarbg-dump-search?style=for-the-badge&logo=github&color=darkgreen&logoColor=lightgreen)
 
-**✅ LIVE at <https://rdavydov.github.io/rarbg-dump/>**
+**✅ LIVE at <https://rdavydov.github.io/rarbg-dump-search/>**
 
 <hr>
 
@@ -38,8 +38,8 @@ or you can donate crypto:
 
 Day theme:
 
-![Day theme](https://raw.githubusercontent.com/rdavydov/rarbg-dump/main/screenshot.png)
+![Day theme](https://raw.githubusercontent.com/rdavydov/rarbg-dump-search/main/screenshot.png)
 
 Night theme:
 
-![Night theme](https://raw.githubusercontent.com/rdavydov/rarbg-dump/main/screenshot-night-theme.png)
+![Night theme](https://raw.githubusercontent.com/rdavydov/rarbg-dump-search/main/screenshot-night-theme.png)
