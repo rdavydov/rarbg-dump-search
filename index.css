@@ -1,0 +1,237 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;  
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #2e52bd, #1623b0);
+  padding: 20px;
+  z-index: 1;
+  top: 0;
+  position: sticky;
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#search-input {
+  margin-right: 10px;
+  padding: 8px;
+  flex: 1;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1em;
+}
+
+#search-button {
+  padding: 8px 16px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#search-button:hover {
+  filter: invert(1);
+}
+
+#search-button:active {
+  background-color: red;
+}
+
+#results {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 960px;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+#results li {
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: left;
+}
+
+#results li + li {
+  border-top: 1px solid #1623b0;
+}
+
+#results li:nth-child(odd) {
+  background-color: var(--odd-color);
+}
+
+#results li:hover {
+  background-color: var(--hover-color);
+}
+
+#results li a:active {
+  color: red;
+}
+
+.magnet-emoji {
+  font-size: small;
+  margin-left: 5px;
+}
+
+/* Day theme styles */
+body.theme-day {
+  --bg-color: #f2f2f2;
+  --text-color: #333;
+  --odd-color: #d2ecff;
+  --hover-color: #aafffe;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Night theme styles */
+body.theme-night {
+  --bg-color: #050840;
+  --text-color: #fff;
+  --odd-color: #1623b0;
+  --hover-color: #2e52bd;  
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch:hover {
+  filter: invert(1);
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #007bff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  bottom: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+footer a {
+  display: inline-block;
+}
+
+footer a {
+  /* border-bottom: 1px solid green; */
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer img {
+  transition-duration: 2s;
+  transition-property: transform;
+  margin-right: 0.3em;
+}
+
+footer img:hover,
+footer a:hover img {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+footer sup:hover {
+  font-size: small;
+}
+
+footer p {
+  margin: 5px;
+}
+
+#donate {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 60px #00ffff;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #00ffdd, 0 0 30px #00ffdd, 0 0 40px #00ffdd, 0 0 50px #00ffdd, 0 0 60px #00ffdd, 0 0 70px #00ffdd;
+  }
+}
