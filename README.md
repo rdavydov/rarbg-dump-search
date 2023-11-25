@@ -8,14 +8,12 @@
 ![](https://img.shields.io/github/watchers/rdavydov/rarbg-dump-search?style=for-the-badge&logo=github&color=darkblue&logoColor=aquamarine)
 ![](https://img.shields.io/github/last-commit/rdavydov/rarbg-dump-search?style=for-the-badge&logo=github&color=darkgreen&logoColor=lightgreen)
 
-**✅ LIVE at <https://rdavydov.github.io/rarbg-dump-search/>**
-
 <hr>
 
 - Made a DB out of "everything.txt" from <https://github.com/2004content/rarbg>
 - Made a back-end with FastAPI that talks to the DB and serves requests
 - Made a front-end with day/night theme to search the DB via the back-end
-- Deployed the front-end to the GitHub Pages
+- <s>Deployed the front-end to the GitHub Pages</s>
 
 *Dump is fully migrated into 2 DBs, total number of magnets is **3.468.029**.*
 
