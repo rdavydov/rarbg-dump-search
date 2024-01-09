@@ -27,14 +27,7 @@
                     alt="GitHub">@rdavydov</a>, hosted by <a href="https://t.me/hermietkreeft" target="_blank"><img
                     src="https://telegram.org/img/favicon-16x16.png" width='10' height="10"
                     alt="Telegram">@hermietkreeft</a></p>
-        <p>Donate: DOGE <a><img
-                    src="https://dynamic-assets.coinbase.com/3803f30367bb3972e192cd3fdd2230cd37e6d468eab12575a859229b20f12ff9c994d2c86ccd7bf9bc258e9bd5e46c5254283182f70caf4bd02cc4f8e3890d82/asset_icons/1597d628dd19b7885433a2ac2d7de6ad196c519aeab4bfe679706aacbf1df78a.png"
-                    alt="Donate DOGE" height="10" width="10">
-                <sub><sup>DAKzncwKkpfPCm1xVU7u2pConpXwX7HS3D</sup></sub></a><br />Donate: XMR <a><img
-                    src="https://dynamic-assets.coinbase.com/a353373ccecedb0e8b6f51ed78db22fbe0167d63d129b15963407f71392c052ae5f2ffd5fbaa6e976da86b73987a335462022f5f54ec559360683ddb8da3da96/asset_icons/a6f13081ab7468290003b49b78fc383614e113700a151a4f9794c556f5c3ca9a.png"
-                    alt="Donate XMR" height="10"
-                    width="10"><sub><sup>46fzadEigE7B3kyJB6AdiccaTha3SWUdTNnE4FL6YtjCgYMASAyXGkMe1XY4iApv2VDSxBT6d8PTW3vwtNWnfu6W4g4jyJF</sup></sub></a>
-        </p>
+        <p>Donate: <a href="https://dogechain.info/" target="_blank">DOGE</a> <a href="#" onclick="copyToClipboard()"><img src="https://dynamic-assets.coinbase.com/3803f30367bb3972e192cd3fdd2230cd37e6d468eab12575a859229b20f12ff9c994d2c86ccd7bf9bc258e9bd5e46c5254283182f70caf4bd02cc4f8e3890d82/asset_icons/1597d628dd19b7885433a2ac2d7de6ad196c519aeab4bfe679706aacbf1df78a.png" alt="Donate DOGE" height="10" width="10">DAKzncwKkpfPCm1xVU7u2pConpXwX7HS3D<span id="copiedMessage" style="display:none;"> 📋 Copied!</span></a></p>
         <p id="donate">Please donate to keep this project alive!</p>
         <p id="legal">For legal notices email our agent <a
                 href="mailto:legal@coomer.party?subject=Legal%20(rarbg.coomer.party)">legal@coomer.party</a> and include
@@ -43,6 +36,37 @@
     </footer>
 
     <script src="index.js"></script>
+    <script>
+        function copyToClipboard() {
+            // Create a temporary input element
+            var tempInput = document.createElement("input");
+            
+            // Set the value of the input to the DOGE address
+            tempInput.value = "DAKzncwKkpfPCm1xVU7u2pConpXwX7HS3D";
+            
+            // Append the input to the document
+            document.body.appendChild(tempInput);
+            
+            // Select the content of the input
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); /*For mobile devices*/
+            
+            // Copy the selected text to the clipboard
+            document.execCommand("copy");
+            
+            // Remove the temporary input
+            document.body.removeChild(tempInput);
+            
+            // Display a non-intrusive message
+            var message = document.getElementById("copiedMessage");
+            message.style.display = "inline";
+            
+            // Hide the message after a short delay (e.g., 3 seconds)
+            setTimeout(function() {
+                message.style.display = "none";
+            }, 3000);
+        }
+    </script>    
 </body>
 
 </html>
