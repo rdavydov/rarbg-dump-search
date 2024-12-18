@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         resultsList.innerHTML = '<p>Searching...</p>';
         resultsHeader.textContent = 'Results';
 
-        const url = decodeURL('aHR0cDovL3JhcmJnLm1vb28uY29tOjY2Ni8/cT0');
+        const url = decodeURL('aHR0cHM6Ly9yYXJiZy5tb29vLmNvbS8/cT0');
         fetch(url + query)
             .then(response => response.json())
             .then(data => {
