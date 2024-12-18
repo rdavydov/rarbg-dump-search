@@ -2,6 +2,7 @@
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.httpsredirect import HTTPSRedirectMiddleware
 from pymongo import MongoClient
 from dotenv import load_dotenv
 import os
@@ -20,15 +21,16 @@ collection_2 = db_2[os.getenv("COLLECTION_NAME_2")]
 
 app.add_middleware(
     CORSMiddleware,
-    # allow_origins=["*"],
-    allow_origins=[
-        "http://a92836ve.beget.tech",
-        "https://rarbg.coomer.party"
-    ],
+    allow_origins=["*"],
+    # allow_origins=[
+    #     "http://a92836ve.beget.tech",
+    #     "https://rarbg.coomer.party"
+    # ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+app.add_middleware(HTTPSRedirectMiddleware)
 
 
 @app.get("/")
