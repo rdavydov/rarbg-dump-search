@@ -21,10 +21,10 @@ collection_2 = db_2[os.getenv("COLLECTION_NAME_2")]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    # allow_origins=[
-    #     "http://a92836ve.beget.tech",
-    #     "https://rarbg.coomer.party"
+    # allow_origins=["*"],
+    allow_origins=[
+        "https://rdavydov.github.io",
+        "https://rarbg-ten.vercel.app",
     # ],
     allow_credentials=True,
     allow_methods=["*"],
