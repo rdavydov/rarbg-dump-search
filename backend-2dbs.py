@@ -25,7 +25,7 @@ app.add_middleware(
     allow_origins=[
         "https://rdavydov.github.io",
         "https://rarbg-ten.vercel.app",
-    # ],
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
